@@ -14,6 +14,6 @@ process sayHello {
 }
 
 workflow {
-    ch_greetings = channel.of('Bonjour', 'Ciao', 'Hello', 'Hola')
+    ch_greetings = channel.of('Hallo', 'Hello', 'Hola', 'Bonjour')
     sayHello(ch_greetings).view()
 }
